@@ -10,6 +10,7 @@ Api para o app de primeiros socorros, com intuito de alimentar a aplicação com
 git clone https://github.com/alexandrehcdc/ajuda-me.git # comando para clonar o projeto
 cd ajuda-me-api #acessar a página
 yarn #ou npm install para instalar as dependências
+nodemon #inicia a aplicação
 ```
 
 ## Ferramentas e bibliotecas a serem utilizadas
