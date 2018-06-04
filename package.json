@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "description": "API para o projeto ajuda-me",
   "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
   "repository": "git@github.com:alexandrehcdc/ajuda-me-api.git",
   "author": "Alexandre H",
   "license": "MIT",
