@@ -1,0 +1,16 @@
+{
+    "services": [
+        {
+            "type": "Me envolvi em um acidente"
+        },
+        {
+            "type": "Tenho problemas/Dores crônicas"
+        },
+        {
+            "type": "Tenho Problemas/Dores agudas"
+        },
+        {
+            "type": "Presenciei acidentes de terceiros"
+        }
+    ] 
+}

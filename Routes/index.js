@@ -9,8 +9,16 @@ router.route('/locations')
   .get((req, res, next) => {
     readFile(path.join(__dirname, '/../bases_samu_al.json'), 'utf8', (err, data) => {
       if (err) throw err
-        res.send(data)
+      res.send(data)
     })
   })
+
+router.route('/accidents')
+.get((req, res, next) => {
+  readFile(path.join(__dirname, '/../service_types.json'), 'utf8', (err, data) => {
+    if (err) throw err
+    res.send(data)
+  })
+})
 
 module.exports = router
