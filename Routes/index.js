@@ -14,11 +14,11 @@ router.route('/locations')
   })
 
 router.route('/accidents')
-.get((req, res, next) => {
-  readFile(path.join(__dirname, '/../service_types.json'), 'utf8', (err, data) => {
-    if (err) throw err
-    res.send(data)
+  .get((req, res, next) => {
+    readFile(path.join(__dirname, '/../service_types.json'), 'utf8', (err, data) => {
+      if (err) throw err
+      res.send(data)
+    })
   })
-})
 
 module.exports = router
