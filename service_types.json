@@ -4,13 +4,22 @@
             "type": "Me envolvi em um acidente"
         },
         {
-            "type": "Tenho problemas/Dores crônicas"
+            "type": "Estou socorrendo alguém"
         },
         {
-            "type": "Tenho Problemas/Dores agudas"
+            "type": "Tenho dores fortes"
+        },
+        {
+            "type": "Sofri um acidente de trabalho"
         },
         {
             "type": "Presenciei acidentes de terceiros"
+        },
+        {
+            "type": "Presenciei algum desastre natural"
+        },
+        {
+            "type": "Outros"
         }
     ] 
 }
