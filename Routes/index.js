@@ -5,8 +5,10 @@ const router = new express.Router()
 const path = require('path')
 const {readFile} = require('fs')
 const userRouter = require('./userRouter')
+const { basesRouter, basesPath } = require('./basesRouter')
 
 router.use('/user', userRouter)
+router.use(basesPath, basesRouter)
 
 router.route('/locations')
   .get((req, res, next) => {

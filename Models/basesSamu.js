@@ -1,11 +1,11 @@
 'use strict'
 
 const mongoose = require('mongoose')
-
+const path = 'bases_samu_als'
 const baseSchema = new mongoose.Schema({
     type : {type: String},
     properties : {
-        nome : {type: String, unique: true},
+        nome : {type: String},
         municipio : {type: String},
         endereco : {type: String}
     },
@@ -15,6 +15,6 @@ const baseSchema = new mongoose.Schema({
     }
 })
 
-const baseModel = mongoose.model('bases_samu_al', baseSchema)
+const baseModel = mongoose.model(path, baseSchema)
 
 module.exports = baseModel

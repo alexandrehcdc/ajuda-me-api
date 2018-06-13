@@ -1,10 +1,8 @@
 'use strict'
 
 const express = require('express')
-const app = express()
 const router = new express.Router()
 const { userService } = require('../Service')
-const path = require('path')
 
 router.route('/')
     .get((req, res, next) => {
