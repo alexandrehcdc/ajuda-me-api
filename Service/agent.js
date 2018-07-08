@@ -3,7 +3,7 @@
 const { agent } = require('../Models')
 
 async function get() {
-    return await agent.find().count().exec()
+    return await agent.count()
 }
 
 module.exports = {get: get}

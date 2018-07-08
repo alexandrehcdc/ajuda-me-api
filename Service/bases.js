@@ -6,4 +6,8 @@ async function get() {
     return await basesSamu.find().exec()
 }
 
-module.exports = {get: get}
+async function available() {
+    return await basesSamu.count()
+}
+
+module.exports = {get: get, available: available}

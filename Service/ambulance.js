@@ -3,7 +3,7 @@
 const { ambulance } = require('../Models')
 
 async function get() {
-    return await ambulance.find().count().exec()
+    return await ambulance.count()
 }
 
 module.exports = {get: get}

@@ -13,4 +13,13 @@ router.route('/')
             .catch(next)
     })
 
+router.route('/available')
+    .get((req, res, next) => {
+        basesService.available()
+            .then(amount => {
+                res.json(amount)
+            })
+            .catch(next)
+    })
+
 module.exports = {basesRouter : router, basesPath: '/bases'}    

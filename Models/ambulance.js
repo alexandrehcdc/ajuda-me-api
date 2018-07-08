@@ -11,6 +11,6 @@ const ambulanceSchema = new mongoose.Schema({
     }
 })
 
-const ambulanceModel = mongoose.model(path, ambulanceSchema)
+const ambulanceModel = mongoose.model(path, ambulanceSchema, path)
 
 module.exports = ambulanceModel
