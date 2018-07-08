@@ -2,5 +2,7 @@
 
 module.exports = {
     userService: require('./user'),
-    basesService: require('./bases')
+    basesService: require('./bases'),
+    agentService: require('./agent'),
+    ambulanceService: require('./ambulance')
 }
