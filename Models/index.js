@@ -4,5 +4,6 @@ module.exports = {
     helpRequest : require('./helpRequest'),
     basesSamu : require('./basesSamu'),
     ambulance : require('./ambulance'),
-    agent : require('./agent')
+    agent : require('./agent'),
+    helpCall : require('./helpCall')
 }
