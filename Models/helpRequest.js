@@ -1,7 +1,7 @@
 'use strict'
 
 const mongoose = require('mongoose')
-
+// discontinued
 const requestSchema = new mongoose.Schema({
     callerId        : {type: String},
     serviceId       : {type: String},

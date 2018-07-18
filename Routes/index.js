@@ -7,12 +7,14 @@ const {readFile} = require('fs')
 const userRouter = require('./userRouter')
 const { basesRouter, basesPath } = require('./basesRouter')
 const { agentRouter, agentPath } = require('./agentRouter')
+const { helpCallRouter, helpCallPath} = require('./helpCallRouter')
 const { ambulanceRouter, ambulancePath } = require('./ambulanceRouter')
 
 router.use('/user', userRouter)
 router.use(basesPath, basesRouter)
 router.use(agentPath, agentRouter)
 router.use(ambulancePath, ambulanceRouter)
+router.use(helpCallPath, helpCallRouter)
 
 router.route('/locations')
   .get((req, res, next) => {

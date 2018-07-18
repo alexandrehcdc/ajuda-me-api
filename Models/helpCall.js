@@ -1,9 +1,10 @@
 'use strict'
 
 const mongoose = require('mongoose')
-const path = 'helpCall'
+const path = 'helpcalls'
 const helpCallSchema = new mongoose.Schema({
     userId : {type: String},
+    serviceId : {type: String},
     timestamp : {type: String},
     geometry : {
         type : {type: String},

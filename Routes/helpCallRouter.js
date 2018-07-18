@@ -7,22 +7,14 @@ const { helpCallService } = require('../Service')
 router.route('/')
     .get((req, res, next) => {
         helpCallService.get()
-            .then(locations => {
-                res.json(locations)
+            .then(calls => {
+                console.log('calls' + calls)
+                res.json(calls)
             })
             .catch(next)
     })
 
-router.route('/available')
-    .get((req, res, next) => {
-        helpCallService.available()
-            .then(amount => {
-                res.json(amount)
-            })
-            .catch(next)
-    })
-
-    router.route('/available')
+router.route('/')
     .post((req, res, next) => {
         helpCallService.save(req.body)
             .then(helpObject => {

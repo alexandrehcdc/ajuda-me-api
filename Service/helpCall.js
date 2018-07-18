@@ -3,6 +3,7 @@
 const { helpCall } = require('../Models')
 
 async function get() {
+    console.log(await helpCall.count())
     return await helpCall.find().exec()
 }
 
@@ -11,7 +12,8 @@ async function amount() {
 }
 
 async function save(model) {
-    return await model.save()
+    const call = new helpCall(model)
+    return await call.save()
 }
 
 module.exports = {get: get,
