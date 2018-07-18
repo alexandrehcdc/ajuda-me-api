@@ -24,6 +24,12 @@ router.route('/locations')
     })
   })
 
+router.route('/teste')
+  .post((req, res, next) => {
+    console.log(req.body)
+    res.send(req.body)
+  })
+
 router.route('/accidents')
   .get((req, res, next) => {
     readFile(path.join(__dirname, '/../service_types.json'), 'utf8', (err, data) => {

@@ -7,8 +7,6 @@ const ambulanceSchema = new mongoose.Schema({
     properties : {
         model : {type: String},
         year : {type: String},
-        plate : {type: String},
-        status : {type: String},
         state : {type: String}
     }
 })
